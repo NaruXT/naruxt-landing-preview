@@ -89,10 +89,13 @@
         </p>
 
         <div class="rise mt-12 flex flex-col gap-4 sm:flex-row sm:items-center" style="animation-delay:.2s">
-          <a href="#contacto"
+          <button type="button"
+             data-cal-link="josue-roque-wgtxdx/30-min-meeting"
+             data-cal-namespace="30-min-meeting"
+             data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
              class="inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 font-medium text-slate-950 transition hover:bg-slate-200">
             Agenda tu arranque
-          </a>
+          </button>
           <a href="#como-funciona"
              class="inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 font-medium text-slate-300 transition hover:text-white">
             Cómo funciona <span aria-hidden="true">&darr;</span>
@@ -380,10 +383,13 @@
             Un arranque acotado, con fecha fija y alcance que coordinamos. Cuéntame tu proceso y salgamos con algo funcionando.
           </p>
           <div class="relative mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a href="mailto:josueroque@naruxt.com?subject=Quiero%20agendar%20mi%20arranque%20de%2030%20d%C3%ADas"
+            <button type="button"
+               data-cal-link="josue-roque-wgtxdx/30-min-meeting"
+               data-cal-namespace="30-min-meeting"
+               data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
                class="inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 font-medium text-slate-950 transition hover:bg-slate-200">
               Agenda tu arranque
-            </a>
+            </button>
             <a href="founder.html"
                class="group inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-7 py-3.5 font-medium text-white transition hover:bg-white/5">
               Conoce al fundador
@@ -432,6 +438,15 @@
         else { ticking = false; }
       }
     })();
+  </script>
+
+  <!-- Cal.com element-click embed -->
+  <script type="text/javascript">
+    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", "30-min-meeting", {origin:"https://app.cal.com"});
+    Cal.config = Cal.config || {};
+    Cal.config.forwardQueryParams = true;
+    Cal.ns["30-min-meeting"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
   </script>
 
 </body>
