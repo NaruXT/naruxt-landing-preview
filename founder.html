@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Josue Roque · Founder &amp; Lead Developer en Naruxt</title>
+  <meta name="description" content="Josue Roque, Founder & Lead Developer en Naruxt. Integro tecnología en los procesos de empresas en crecimiento, con acceso directo y entregas de tiempo fijo." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['Newsreader', 'Georgia', 'serif'],
+          },
+          letterSpacing: { tightest: '-0.04em' },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root { color-scheme: light; }
+    body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    .rise { animation: rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  </style>
+</head>
+
+<body class="bg-[#faf9f7] font-sans text-slate-800 antialiased selection:bg-slate-900 selection:text-white">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-slate-900/5 bg-[#faf9f7]/80 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-3xl items-center justify-between px-6 py-5">
+      <a href="index.html" class="text-sm font-semibold tracking-tightest text-slate-900">Naruxt<span class="text-slate-400">.</span></a>
+      <a href="index.html" class="group inline-flex items-center gap-2 text-sm text-slate-500 transition hover:text-slate-900">
+        <span class="transition-transform duration-300 group-hover:-translate-x-0.5">&larr;</span>
+        Volver a naruxt.com
+      </a>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-3xl px-6">
+
+    <!-- Perfil -->
+    <section class="pt-24 sm:pt-28">
+      <div class="rise flex items-center gap-5">
+        <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-slate-900 text-lg font-semibold tracking-tight text-white">
+          JR
+        </div>
+        <div>
+          <h1 class="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">Josue Roque</h1>
+          <p class="mt-1 text-slate-500">Founder &amp; Lead Developer en Naruxt</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section class="rise mt-16" style="animation-delay:.08s">
+      <p class="font-serif text-2xl leading-relaxed text-slate-800 sm:text-[28px] sm:leading-[1.5]">
+        Me apasiona democratizar la tecnología: convertir sistemas complejos en herramientas simples que se integran en la forma en que una empresa ya trabaja.
+      </p>
+      <p class="mt-6 text-lg leading-relaxed text-slate-600">
+        Construyo software con propósito para organizaciones en crecimiento. No entrego un juguete aislado: integro tecnología en tus procesos para que el impacto se sienta en el negocio, no solo en una demo.
+      </p>
+      <p class="mt-4 text-lg leading-relaxed text-slate-600">
+        Creo que la tecnología es el medio y la persona el fin. La IA no sirve de nada sobre data fragmentada ni repartiendo herramientas para que todos experimenten: el impacto llega por foco, un proceso y una métrica a la vez.
+      </p>
+      <p class="mt-4 text-lg leading-relaxed text-slate-600">
+        Cuando trabajas conmigo, el que te vende es el que construye: acceso directo, sin capas ni teléfono descompuesto. Y no estoy solo, cuento con una red de colaboradores de confianza a la que recurro en cada proyecto para sostener el ritmo y las entregas de tiempo fijo.
+      </p>
+    </section>
+
+    <!-- Cartera de proyectos -->
+    <section class="mt-20">
+      <div class="flex items-baseline justify-between">
+        <h2 class="text-sm font-medium uppercase tracking-widest text-slate-400">Lo que he construido</h2>
+      </div>
+
+      <div class="mt-8 divide-y divide-slate-900/5 border-y border-slate-900/5">
+        <!-- Proyecto 1 -->
+        <article class="group flex flex-col gap-2 py-7 transition sm:flex-row sm:items-start sm:justify-between sm:gap-8">
+          <div class="sm:max-w-md">
+            <div class="flex items-center gap-3">
+              <h3 class="text-lg font-semibold text-slate-900">WhatsApp AI Receptionist</h3>
+              <span class="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-2.5 py-0.5 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-600/20">
+                <span class="h-1.5 w-1.5 rounded-full bg-blue-500"></span> En uso propio
+              </span>
+            </div>
+            <p class="mt-2 leading-relaxed text-slate-600">
+              Asistente con IA sobre WhatsApp que construí y uso para atender, calificar y agendar de forma automática. Lo pruebo en mi propia operación antes de llevarlo a la de un cliente. Demo disponible a pedido.
+            </p>
+          </div>
+          <p class="shrink-0 text-sm text-slate-400 sm:text-right">IA conversacional<br class="hidden sm:block" /> · Automatización</p>
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="group flex flex-col gap-2 py-7 transition sm:flex-row sm:items-start sm:justify-between sm:gap-8">
+          <div class="sm:max-w-md">
+            <div class="flex items-center gap-3">
+              <h3 class="text-lg font-semibold text-slate-900">Plataforma Naruxt</h3>
+              <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-medium text-emerald-700 ring-1 ring-inset ring-emerald-600/20">
+                <span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span> En vivo
+              </span>
+            </div>
+            <p class="mt-2 leading-relaxed text-slate-600">
+              El sitio y la identidad de Naruxt que estás viendo ahora mismo. Diseñado y construido por mí para transmitir con claridad qué hago y cómo trabajo: simple, sobrio y sin adornos.
+            </p>
+          </div>
+          <p class="shrink-0 text-sm text-slate-400 sm:text-right">Web · Producto<br class="hidden sm:block" /> · Diseño</p>
+        </article>
+
+        <!-- Proyecto 3 -->
+        <article class="group flex flex-col gap-2 py-7 transition sm:flex-row sm:items-start sm:justify-between sm:gap-8">
+          <div class="sm:max-w-md">
+            <div class="flex items-center gap-3">
+              <h3 class="text-lg font-semibold text-slate-900">Comunidad &amp; Capacitación</h3>
+              <span class="inline-flex items-center gap-1.5 rounded-full bg-amber-50 px-2.5 py-0.5 text-xs font-medium text-amber-700 ring-1 ring-inset ring-amber-600/20">
+                <span class="h-1.5 w-1.5 rounded-full bg-amber-500"></span> En desarrollo
+              </span>
+            </div>
+            <p class="mt-2 leading-relaxed text-slate-600">
+              Iniciativa para llevar aprendizaje simple y accesible a todos los niveles de una organización. La cultura de ejecución también se enseña: tecnología que la gente entiende y adopta.
+            </p>
+          </div>
+          <p class="shrink-0 text-sm text-slate-400 sm:text-right">Educación<br class="hidden sm:block" /> · Cultura</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contacto y retorno -->
+    <section class="mt-20">
+      <h2 class="text-sm font-medium uppercase tracking-widest text-slate-400">Contacto</h2>
+      <p class="mt-4 max-w-xl leading-relaxed text-slate-600">
+        Si tienes un proceso que sientes que debería ir más rápido, conversemos. Empezamos con un arranque de 30 días, con fecha fija y alcance acotado a ti.
+      </p>
+      <div class="mt-6">
+        <a href="mailto:josueroque@naruxt.com?subject=Quiero%20agendar%20mi%20arranque%20de%2030%20d%C3%ADas"
+           class="inline-flex items-center justify-center gap-2 rounded-full bg-slate-900 px-6 py-3 font-medium text-white transition hover:bg-slate-700">
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
+          Agenda tu arranque
+        </a>
+      </div>
+
+      <!-- Social links -->
+      <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-slate-500">
+        <a href="https://github.com/naruxt" target="_blank" rel="noopener" class="group inline-flex items-center gap-2 transition hover:text-slate-900">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.26.793-.577v-2.234c-3.338.726-4.043-1.61-4.043-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.086 1.84 1.238 1.84 1.238 1.07 1.835 2.807 1.305 3.492.997.107-.776.418-1.305.762-1.605-2.665-.303-5.467-1.334-5.467-5.931 0-1.31.468-2.382 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 3.003-.404c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.839 1.235 1.911 1.235 3.221 0 4.609-2.807 5.625-5.479 5.921.43.372.814 1.102.814 2.222v3.293c0 .32.192.694.801.576C20.566 22.296 24 17.797 24 12.5 24 5.87 18.627.5 12 .5Z"/></svg>
+          github.com/naruxt
+        </a>
+        <a href="https://www.linkedin.com/in/josueroque/" target="_blank" rel="noopener" class="group inline-flex items-center gap-2 transition hover:text-slate-900">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286ZM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065Zm1.782 13.019H3.555V9h3.564v11.452ZM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003Z"/></svg>
+          in/josueroque
+        </a>
+        <a href="https://x.com/Josueroque31" target="_blank" rel="noopener" class="group inline-flex items-center gap-2 transition hover:text-slate-900">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/></svg>
+          @Josueroque31
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-24 border-t border-slate-900/5 py-10">
+      <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+        <p class="text-sm text-slate-400">© 2026 Naruxt · Josue Roque</p>
+        <a href="index.html" class="group inline-flex items-center gap-2 text-sm text-slate-500 transition hover:text-slate-900">
+          <span class="transition-transform duration-300 group-hover:-translate-x-0.5">&larr;</span>
+          Volver a naruxt.com
+        </a>
+      </div>
+    </footer>
+
+  </main>
+
+</body>
+</html>
